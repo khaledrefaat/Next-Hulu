@@ -9,7 +9,7 @@ import HeaderItem from './headerItem';
 const Header = () => {
   return (
     <header
-      className="px-1 sm:px-2 md:px-4 lg:px-8 py-2 flex justify-between items-center mt-3
+      className="px-1 sm:px-2 md:px-4 lg:px-8 py-2 flex flex-col items-center md:flex-row md:justify-between mt-3
     "
     >
       <ul className="flex">
