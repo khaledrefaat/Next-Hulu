@@ -5,6 +5,7 @@ import CardsIcon from '../../assets/cards.svg';
 import SearchIcon from '../../assets/search.svg';
 import AvatarIcon from '../../assets/avatar.svg';
 import HeaderItem from './headerItem';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -13,14 +14,22 @@ const Header = () => {
     "
     >
       <ul className="flex">
-        <HeaderItem title="home" Icon={HomeIcon} />
+        <Link href="/">
+          <a>
+            <HeaderItem title="home" Icon={HomeIcon} />
+          </a>
+        </Link>
         <HeaderItem title="energy" Icon={EnergyIcon} />
         <HeaderItem title="verified" Icon={ValidIcon} />
         <HeaderItem title="collections" Icon={CardsIcon} />
         <HeaderItem title="search" Icon={SearchIcon} />
         <HeaderItem title="user" Icon={AvatarIcon} />
       </ul>
-      <h1 className="text-4xl font-black text-white font-sans">hulu</h1>
+      <Link href="/">
+        <a>
+          <h1 className="text-4xl font-black text-white font-sans">hulu</h1>
+        </a>
+      </Link>
     </header>
   );
 };
