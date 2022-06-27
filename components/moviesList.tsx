@@ -8,7 +8,6 @@ interface MoviesListProps {
 }
 
 const MoviesList: React.FC<MoviesListProps> = ({ movies }) => {
-  console.log(movies);
   return (
     <div className="mx-5 sm:mx-2 md:mx-0 sm:grid sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-3 gap-x-4 3xl:grid-cols-4 4xl:grid-cols-5">
       {movies.map(movie => (
